@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+# Wouldn't be data visualization without having to cleanup a dataset.
+
+require 'csv'
+
+# Helper function for normalizing strings.  Remove duplicate spacing and lowercase
+# str - The string
+# Returns a string
+def normalize(str)
+  str && str.downcase.gsub(/\s{2,}/, ' ').strip
+end
+
+# Open the raw data
+raw_data = CSV.open('data/raw-fire-data.csv', :headers => true, :header_converters => :symbol)
+
+# Create a new CSV file so our raw source remains untouched.
+out_data = CSV.open('data/fires.csv', 'w', :headers => [:year, :desc, :cause, :acres, :lat, :lon])
+
+# Itterate through the raw data, pick what data we're interested in and write
+# it to the file system
+raw_data.each do |d|
+  next if d[:location].nil? or d[:generaldesc].nil?
+
+  lat,lon = d[:location].gsub(/\(|\)/, '').split(',').map(&:to_f)
+  out_data << [
+    d[:fireyear],
+    normalize(d[:generaldesc]),
+    normalize(d[:causebydesc]),
+    d[:size_acres].to_f,
+    lat,
+    lon
+  ]
+end

@@ -21,3 +21,9 @@ Ask people to import fire data source that lives on MapBox.
 ### What next?
 * Print your map!
 * Find data. Have fun. Be responsible.
+
+
+### Notes
+* Metadata isn't basically nonexistent.  Probably around here somewhere http://www.oregon.gov/ODF/Pages/index.aspx
+* NFCA - No Fire Crew Action
+* 1.7% of fires have no description.  
