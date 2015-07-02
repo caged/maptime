@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+# Parse raw data and generate a new CSV containing only fires with a generaldesc and
+# location.  This excludes about 12% of fires in the dataset as a result.  Fine
+# for the tutorial we're doing, but we'd probably want to do some investigation
+# around the missing data if we were to ever present this as a source of truth.
+#
 # Wouldn't be data visualization without having to cleanup a dataset.
 
 require 'csv'
