@@ -20,7 +20,7 @@ end
 raw_data = CSV.open('data/raw-fire-data.csv', :headers => true, :header_converters => :symbol)
 
 # Create a new CSV file so our raw source remains untouched.
-out_data = CSV.open('data/fires.csv', 'w', :headers => [:year, :desc, :cause, :acres, :lat, :lon])
+out_data = CSV.open('data/fires.csv', 'w', :headers => [:year, :desc, :cause, :acres, :lat, :lon], :write_headers => true)
 
 # Itterate through the raw data, pick what data we're interested in and write
 # it to the file system
