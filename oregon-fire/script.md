@@ -18,7 +18,9 @@ Ask people to import fire data source that lives on MapBox.
 * [Maybe] Discuss zoom-level styling
 * Move on to using an emoji or vector symbol for fire
 
-### What next?
+### What next? Things you can do at home
+* Only render Oregon
+* Add county data for context
 * Print your map!
 * Find data. Have fun. Be responsible.
 
@@ -26,4 +28,4 @@ Ask people to import fire data source that lives on MapBox.
 ### Notes
 * Metadata isn't basically nonexistent.  Probably around here somewhere http://www.oregon.gov/ODF/Pages/index.aspx
 * NFCA - No Fire Crew Action
-* 1.7% of fires have no description.  
+* About 12% of fires have no description and location.  
