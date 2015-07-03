@@ -1,5 +1,5 @@
 ### Welcome
-A brief intro.  Who I am.  What I do.  Why I make maps.
+A brief intro.  Who I am.  What I do.  Why you should make maps.
 
 ### What we're going to create
 Describe what we're creating and what we'll learn.
