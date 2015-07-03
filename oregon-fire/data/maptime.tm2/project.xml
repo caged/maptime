@@ -3487,11 +3487,19 @@
 
 <Style name="fires" filter-mode="first">
   <Rule>
-    <Filter>([year] &gt;= 2010)</Filter>
-    <MarkersSymbolizer width="6" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.2" />
+    <Filter>([cause] = 'lightning') and ([year] &gt;= 2014)</Filter>
+    <MarkersSymbolizer fill="#800080" opacity="0.5" width="4" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
   </Rule>
   <Rule>
-    <MarkersSymbolizer width="3" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.2" />
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer fill="#800080" opacity="0.5" width="2" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
+  </Rule>
+  <Rule>
+    <Filter>([year] &gt;= 2014)</Filter>
+    <MarkersSymbolizer width="4" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.5" comp-op="hard-light" />
+  </Rule>
+  <Rule>
+    <MarkersSymbolizer width="2" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.5" comp-op="hard-light" />
   </Rule>
 </Style>
 <Layer name="fires"

@@ -41,6 +41,14 @@ Point out markers in the ocean and oddly even-spaced points inside Oregon as a g
 
 * Note how not all markers aren't drawn.  Enabled `marker-allow-overlap`.
 
+Talk about the disperety between Medford and Portland.  There are about 77k people in Medford vs. about 620k people in Portland.  
+
+Q. What could that tell us about the fires?
+A. More people != more fires.  
+
+Q. What do we *think* might be causing the fires in Medford?
+A. ...Later
+
 ```css
 #fires {
   marker-width: 3;
@@ -53,7 +61,7 @@ Point out markers in the ocean and oddly even-spaced points inside Oregon as a g
 
   ![](./images/step-3.png)
 
-* Style different years as a different size.
+* Style recent (>=2014) fires a different color.
 
 Discuss the need for some kind of spreadsheet application or a database.  Something that helps you ask questions of the data to find out what message you're trying to convey.
 
@@ -65,7 +73,7 @@ Discuss the need for some kind of spreadsheet application or a database.  Someth
   marker-allow-overlap: true;
   marker-opacity: 0.2;
 
-  [year >= 2010] {
+  [year >= 2014] {
     marker-width: 6;
   }
  }
@@ -74,9 +82,54 @@ Discuss the need for some kind of spreadsheet application or a database.  Someth
 ![](./images/step-4.png)
 
 
+* Use description to style "motorist" a different direction.
 
-* Combine with radius for year to create smaller circles for older years
-* [Maybe] Discuss zoom-level styling
+```css
+#fires {
+  marker-width: 3;
+  marker-fill: orangered;
+  marker-line-width: 0;
+  marker-allow-overlap: true;
+  marker-opacity: 0.2;
+
+  [year >= 2014] {
+    marker-width: 6;
+  }
+
+  [cause='motorist'] {
+   marker-fill: purple;
+   marker-opacity: 0.5;
+  }
+ }
+ ```
+
+![](./images/step-5.png)
+
+* Change cause to lightning.  Talk about how it aligns with Medford.
+
+```css
+#fires {
+  marker-width: 2;
+  marker-fill: orangered;
+  marker-line-width: 0;
+  marker-allow-overlap: true;
+  marker-opacity: 0.5;
+  marker-comp-op: hard-light;
+
+  [year >= 2014] {
+    marker-width: 4;
+  }
+
+  [cause='lightning'] {
+   marker-fill: purple;
+   marker-opacity: 0.5;
+  }
+ }
+```
+
+![](./images/step-6.png)
+
+
 * Move on to using an emoji or vector symbol for fire
 
 ### What next? Things you can do at home
