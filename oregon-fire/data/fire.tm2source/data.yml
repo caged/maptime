@@ -1,0 +1,31 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: caged.aa3fadad
+  rev: s-6a3ece21
+  saveCenter: false
+attribution: ''
+center: 
+  - -122.179
+  - 43.6599
+  - 7
+description: Data for MaptimePDX.
+Layer: 
+  - id: fires
+    Datasource: 
+      file: /Users/justin/dev/me/maptime/oregon-fire/data/fires.csv
+      type: csv
+    description: ''
+    fields: 
+      acres: Number
+      cause: String
+      desc: String
+      lat: Number
+      lon: Number
+      year: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 12
+minzoom: 7
+name: maptime-pdx
