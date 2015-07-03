@@ -3487,6 +3487,10 @@
 
 <Style name="fires" filter-mode="first">
   <Rule>
+    <Filter>([year] &gt;= 2010)</Filter>
+    <MarkersSymbolizer width="6" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.2" />
+  </Rule>
+  <Rule>
     <MarkersSymbolizer width="3" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.2" />
   </Rule>
 </Style>

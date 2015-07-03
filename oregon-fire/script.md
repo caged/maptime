@@ -53,9 +53,27 @@ Point out markers in the ocean and oddly even-spaced points inside Oregon as a g
 
   ![](./images/step-3.png)
 
-* Style different causes as different colors
+* Style different years as a different size.
 
 Discuss the need for some kind of spreadsheet application or a database.  Something that helps you ask questions of the data to find out what message you're trying to convey.
+
+```css
+#fires {
+  marker-width: 3;
+  marker-fill: orangered;
+  marker-line-width: 0;
+  marker-allow-overlap: true;
+  marker-opacity: 0.2;
+
+  [year >= 2010] {
+    marker-width: 6;
+  }
+ }
+ ```
+
+![](./images/step-4.png)
+
+
 
 * Combine with radius for year to create smaller circles for older years
 * [Maybe] Discuss zoom-level styling
