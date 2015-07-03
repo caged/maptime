@@ -2,7 +2,7 @@
 A brief intro.  Who I am.  What I do.  Why you should make maps.
 
 ### What we're going to create
-Describe what we're creating and what we'll learn.
+Describe what we're creating and what we'll learn.  We're creating a fire map of Oregon which the data was taken from oregon.gov.
 
 ### Intro to MapBox Studio
 Not comprehensive.  Talk about the editor.  The CartoCSS markup.
