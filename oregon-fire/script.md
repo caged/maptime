@@ -133,7 +133,11 @@ Discuss the need for some kind of spreadsheet application or a database.  Someth
 * Move on to using an emoji or vector symbol for fire
 
 ### What next? Things you can do at home
-* Followup question:  Why do you think there are no fires in South eastern Oregon?  
+* Followup questions:  
+
+Q. Why do you think there are no fires in South eastern Oregon? It's not an ocean, so what gives?  
+A. Dataset doesn't include federal lands or "How to be mislead with data."
+
 
 * Only render Oregon
 * Add county data for context
