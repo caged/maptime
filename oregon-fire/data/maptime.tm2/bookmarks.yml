@@ -1,1 +1,7 @@
-[]
+- place_name: Prineville, 97754, Oregon, United States
+  zoom: 7
+  center: 
+    - 44.06785366935762
+    - -120.574951171875
+  tags: 
+    - userbookmark
