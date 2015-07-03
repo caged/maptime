@@ -132,6 +132,31 @@ Discuss the need for some kind of spreadsheet application or a database.  Someth
 
 * Move on to using an emoji or vector symbol for fire
 
+Add flame.svg to the inside of your mapbox studio project file.
+
+```css
+#fires {
+  marker-file: url(flame.svg);
+  marker-width: 4;
+  marker-fill: orangered;
+  marker-line-width: 0;
+  marker-allow-overlap: true;
+  marker-opacity: 0.5;
+  marker-comp-op: hard-light;
+
+  [year >= 2014] {
+    marker-width: 6;
+  }
+
+  [cause='lightning'] {
+   marker-fill: purple;
+   marker-opacity: 0.5;
+  }
+ }
+ ```
+
+ ![](./images/step-7.png)
+
 ### What next? Things you can do at home
 * Followup questions:  
 
