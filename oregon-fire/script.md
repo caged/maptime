@@ -158,15 +158,15 @@ Add flame.svg to the inside of your mapbox studio project file.
  ![](./images/step-7.png)
 
 ### What next? Things you can do at home
+* If we get done too fast, move on to talk about adjusting zoom levels.
+
 * Followup questions:  
 
 Q. Why do you think there are no fires in South eastern Oregon? It's not an ocean, so what gives?  
 A. Dataset doesn't include federal lands or "How to be mislead with data."
 
-
-* Only render Oregon
-* Add county data for context
-* Print your map!
+* Finally, we can change styles to dark background and just play around with
+  different colors to get a look we're after.
 * Find data. Have fun. Be responsible.
 
 
