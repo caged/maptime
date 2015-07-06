@@ -6,12 +6,22 @@
   <Parameter name="center">-122.179,43.6599,7</Parameter>
   <Parameter name="description"><![CDATA[Data for MaptimePDX.]]></Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"fires","description":"","fields":{"year":"Number","desc":"String","cause":"String","acres":"Number","lat":"Number","lon":"Number"}}]}]]></Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"federal_fires","description":"1980-2013 USGS Federal Wildland Fire Occurrence Data","fields":{"OBJECTID":"Number","ORGANIZATI":"String","UNIT":"String","SUBUNIT":"String","SUBUNIT2":"String","FIREID":"String","FIRENAME":"String","FIRENUMBER":"String","FIRECODE":"String","CAUSE":"String","SPECCAUSE":"Number","STATCAUSE":"Number","SIZECLASS":"String","SIZECLASSN":"Number","PROTECTION":"Number","FIREPROTTY":"Number","FIRETYPE":"Number","YEAR_":"String","STARTDATED":"String","CONTRDATED":"String","OUTDATED":"String","GACC":"String","DISPATCH":"String","GACCN":"Number","STATE":"String","STATE_FIPS":"String","FIPS":"Number","DLATITUDE":"Number","DLONGITUDE":"Number","TOTALACRES":"Number","TRPGENCAUS":"Number","TRPSPECCAU":"Number"}},{"id":"fires","description":"","fields":{"year":"Number","desc":"String","cause":"String","acres":"Number","lat":"Number","lon":"Number"}}]}]]></Parameter>
   <Parameter name="maxzoom">12</Parameter>
   <Parameter name="minzoom">7</Parameter>
   <Parameter name="name"><![CDATA[maptime-pdx]]></Parameter>
 </Parameters>
 
+
+<Layer name="federal_fires"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=GRS80 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/justin/Downloads/firehistory_1980_2013_allagencies/firehistory_1980_2013_allagencies.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
 
 <Layer name="fires"
   buffer-size="8"

@@ -3487,18 +3487,41 @@
 
 <Style name="fires" filter-mode="first">
   <Rule>
-    <Filter>([cause] = 'lightning') and ([year] &gt;= 2014)</Filter>
-    <MarkersSymbolizer fill="#800080" opacity="0.5" width="6" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([year] &gt;= 2014) and ([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer width="10" opacity="0.5" fill="#000000" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
   </Rule>
   <Rule>
-    <Filter>([cause] = 'lightning')</Filter>
-    <MarkersSymbolizer fill="#800080" opacity="0.5" file="flame.svg" width="3" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([year] &gt;= 2014) and ([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer fill="#000000" opacity="0.5" width="6" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([year] &gt;= 2014)</Filter>
+    <MarkersSymbolizer width="10" opacity="0.5" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([year] &gt;= 2014)</Filter>
     <MarkersSymbolizer width="6" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.3" comp-op="hard-light" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer opacity="0.5" width="6" fill="#000000" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer fill="#000000" opacity="0.5" file="flame.svg" width="3" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MarkersSymbolizer opacity="0.5" width="6" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
     <MarkersSymbolizer file="flame.svg" width="3" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.3" comp-op="hard-light" />
   </Rule>
 </Style>

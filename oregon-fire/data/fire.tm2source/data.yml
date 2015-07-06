@@ -11,6 +11,47 @@ center:
   - 7
 description: Data for MaptimePDX.
 Layer: 
+  - id: federal_fires
+    Datasource: 
+      file: /Users/justin/Downloads/firehistory_1980_2013_allagencies/firehistory_1980_2013_allagencies.shp
+      type: shape
+    description: 1980-2013 USGS Federal Wildland Fire Occurrence Data
+    fields: 
+      CAUSE: String
+      CONTRDATED: String
+      DISPATCH: String
+      DLATITUDE: Number
+      DLONGITUDE: Number
+      FIPS: Number
+      FIRECODE: String
+      FIREID: String
+      FIRENAME: String
+      FIRENUMBER: String
+      FIREPROTTY: Number
+      FIRETYPE: Number
+      GACC: String
+      GACCN: Number
+      OBJECTID: Number
+      ORGANIZATI: String
+      OUTDATED: String
+      PROTECTION: Number
+      SIZECLASS: String
+      SIZECLASSN: Number
+      SPECCAUSE: Number
+      STARTDATED: String
+      STATCAUSE: Number
+      STATE: String
+      STATE_FIPS: String
+      SUBUNIT: String
+      SUBUNIT2: String
+      TOTALACRES: Number
+      TRPGENCAUS: Number
+      TRPSPECCAU: Number
+      UNIT: String
+      YEAR_: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=GRS80 +no_defs
   - id: fires
     Datasource: 
       file: /Users/justin/dev/me/maptime/oregon-fire/data/fires.csv

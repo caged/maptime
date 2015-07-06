@@ -12,7 +12,16 @@
   }
 
   [cause='lightning'] {
-   marker-fill: purple;
+   marker-fill: rgba(0, 0, 0, 1);
    marker-opacity: 0.5;
+  }
+  
+  [zoom >= 11] {
+    marker-opacity: 0.5;
+    marker-width: 6;
+    
+    [year >= 2014] { 
+      marker-width: 10;
+    }
   }
  }
