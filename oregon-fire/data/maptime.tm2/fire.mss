@@ -6,6 +6,7 @@
   marker-allow-overlap: true;
   marker-opacity: 0.3;
   marker-comp-op: hard-light;
+  marker-ignore-placement: true;
 
   [year >= 2014] {
     marker-width: 6;

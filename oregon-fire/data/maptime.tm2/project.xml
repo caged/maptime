@@ -1154,6 +1154,50 @@
     <StyleName>bridge-fill</StyleName>
     <StyleName>bridge</StyleName>  </Layer>
 
+<Style name="fires" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([year] &gt;= 2014) and ([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer width="10" opacity="0.5" fill="#000000" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" ignore-placement="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([year] &gt;= 2014) and ([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer fill="#000000" opacity="0.5" width="6" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" ignore-placement="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([year] &gt;= 2014)</Filter>
+    <MarkersSymbolizer width="10" opacity="0.5" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" comp-op="hard-light" ignore-placement="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([year] &gt;= 2014)</Filter>
+    <MarkersSymbolizer width="6" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.3" comp-op="hard-light" ignore-placement="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer opacity="0.5" width="6" fill="#000000" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" ignore-placement="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer fill="#000000" opacity="0.5" file="flame.svg" width="3" stroke-width="0" allow-overlap="true" comp-op="hard-light" ignore-placement="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MarkersSymbolizer opacity="0.5" width="6" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" comp-op="hard-light" ignore-placement="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <MarkersSymbolizer file="flame.svg" width="3" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.3" comp-op="hard-light" ignore-placement="true" />
+  </Rule>
+</Style>
+<Layer name="fires"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>fires</StyleName>  </Layer>
+
 <Style name="admin" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -3484,49 +3528,5 @@
 <Layer name="housenum_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
-
-<Style name="fires" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <Filter>([year] &gt;= 2014) and ([cause] = 'lightning')</Filter>
-    <MarkersSymbolizer width="10" opacity="0.5" fill="#000000" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([year] &gt;= 2014) and ([cause] = 'lightning')</Filter>
-    <MarkersSymbolizer fill="#000000" opacity="0.5" width="6" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <Filter>([year] &gt;= 2014)</Filter>
-    <MarkersSymbolizer width="10" opacity="0.5" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([year] &gt;= 2014)</Filter>
-    <MarkersSymbolizer width="6" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.3" comp-op="hard-light" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <Filter>([cause] = 'lightning')</Filter>
-    <MarkersSymbolizer opacity="0.5" width="6" fill="#000000" file="flame.svg" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([cause] = 'lightning')</Filter>
-    <MarkersSymbolizer fill="#000000" opacity="0.5" file="flame.svg" width="3" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MarkersSymbolizer opacity="0.5" width="6" file="flame.svg" fill="#ff4500" stroke-width="0" allow-overlap="true" comp-op="hard-light" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <MarkersSymbolizer file="flame.svg" width="3" fill="#ff4500" stroke-width="0" allow-overlap="true" opacity="0.3" comp-op="hard-light" />
-  </Rule>
-</Style>
-<Layer name="fires"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>fires</StyleName>  </Layer>
 
 </Map>

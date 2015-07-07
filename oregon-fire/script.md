@@ -156,6 +156,7 @@ Add flame.svg to the inside of your mapbox studio project file.
  ```
 
  ![](./images/step-7.png)
+ 
 
 ### What next? Things you can do at home
 * If we get done too fast, move on to talk about adjusting zoom levels.
