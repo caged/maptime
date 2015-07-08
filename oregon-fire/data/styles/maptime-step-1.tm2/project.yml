@@ -10,10 +10,10 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -121.8164
-  - 43.9572
-  - 7
-description: The starter project for the Maptime tutorial.
+  - 0
+  - 20
+  - 2
+description: ''
 format: "png8:m=h:c=128"
 interactivity_layer: ''
 layers: 
@@ -43,9 +43,9 @@ layers:
   - waterway_label
   - housenum_label
   - contour.label
-maxzoom: 15
-minzoom: 6
-name: Maptime Fire Tutorial Step 1
+maxzoom: 21
+minzoom: 0
+name: Medford is literally on fire
 source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5,caged.aa3fadad"
 styles: 
   - style.mss
