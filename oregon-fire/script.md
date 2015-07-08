@@ -1,8 +1,31 @@
 ### Welcome
-A brief intro.  Who I am.  What I do.  Why you should make maps.
+Hi, I'm Justin Palmer.  @Caged on twitter.  I'm an analytics engineer at GitHub.
+
+I really got into maps about 4 or so years ago.  It wasn't really a purposeful decision, it just seemed like the next step for someone who is interested in data processing and data visualization.
+
+Now I create maps for all sorts of reasons, but the two overriding reasons is that they can be very beautiful works of art and for someone like myself who can't draw a circle, this is empowering.
+
+The second reason is an overwhelming curiosity about the data that lies beneath the map.  I want to ask questions of it. I want to know how something is and why something is.  If I were a cat, data would be my brown paper bag.  I have to jump in and see what's in this thing!
 
 ### What we're going to create
-Describe what we're creating and what we'll learn.  We're creating a fire map of Oregon which the data was taken from oregon.gov.
+
+Today we're going to play with fire.  We're going to create a map of [all of the fires recorded by Oregon since 2004](https://data.oregon.gov/Natural-Resources/2005-2014-Fire-Data/9nkj-mp3y).
+
+The goal of this session isn't to create the most beautifully polished map (which we wont), but to try and cover a lot of ground and go through what a real process looks like.
+
+It's not a linear process.  I spend the majority of my time looking through datasets and interrogating data, trying to find what might be interesting. What might be impactful.  Will is have an effect on public discourse?  Will it produce some wonderful art for my wall?  Will it change my perception of something?
+
+When making maps for art, you can get away with exaggerations and less than rigorous standards.  When making maps to inform, especially for questions involving religion, politics, and baseball, you have to be as honest as possible because people will use your maps to bolster their position.
+
+The first step is to find a dataset and ask questions of it.
+
+### Find your tools
+
+You will *absolutely* need a tool that helps you cleanup, transform, and ask all sorts of question of data.  My toolbox for that includes 3 tools:
+
+* Postgres and Postgis - A relational database with GIS extensions
+* GDAL - Contains a suite of command line tools for transforming data to and from different formats and a ton of other things.
+* Microsoft Excel - You will encounter datasets that are locked away in excel.  You will wish you had excel.  Apple Numbers isn't suited for large datasets.
 
 ### Intro to MapBox Studio
 Not comprehensive.  Talk about the editor.  The CartoCSS markup.
@@ -156,7 +179,7 @@ Add flame.svg to the inside of your mapbox studio project file.
  ```
 
  ![](./images/step-7.png)
- 
+
 
 ### What next? Things you can do at home
 * If we get done too fast, move on to talk about adjusting zoom levels.
