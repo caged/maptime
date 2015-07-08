@@ -58,7 +58,7 @@ I like postgres because it has the most powerful GIS extensions of any piece of 
 Breifly walk through the Mapbox Studio editor.  For an in-depth getting started guide, check out [the official docs](https://www.mapbox.com/guides/getting-started-studio/).
 
 ### Incendio!
-Ask people to open the source project.  [TODO UPLOAD TO DROPBOX]
+Ask people to open the source project maptime-step-1.tm2.  [TODO UPLOAD TO DROPBOX]
 
 ### Playing With Fire
 * Create new stylesheet "fire"
