@@ -27,9 +27,35 @@ You will *absolutely* need a tool that helps you cleanup, transform, and ask all
 * GDAL - Contains a suite of command line tools for transforming data to and from different formats and a ton of other things.
 * Microsoft Excel - You will encounter datasets that are locked away in excel.  You will wish you had excel.  Apple Numbers isn't suited for large datasets.
 
+### Making sense of the Data.
+
+For this part, I'm going to talk through some of the scripts I have written to parse the data.  I'll be using the Ruby language and Postgres, but I'm not going to go into details on how to program or how to setup and write SQL.  If you're interested in this or want to talk more about this, come see me during the break or after the class.  I'd be happy to chat with you!
+
+I've download a fire dataset from data.oregon.gov.  I need to first see if is has the geography in a format I can read and second, if it has anything I find interesting.  
+
+```
+open csv/raw-fire-data.csv
+```
+
+* There's some weird character encoding.  That'll screw things up.
+* Lat/lon are combined in a column called "Location."  We need these in two separate fields of latitude and longitude and we also need to get rid of the surrounding parenthesis.  I have written a script for this already.
+* Some data is missing
+
+But most of all.  This dataset is in GREAT SHAPE. You won't believe the terribleness of datasets you can find on the internet.  PDFS, HTML soup, terrible, terrible stuff.
+
+```
+./script/clean-data
+open data/csv/fires.csv
+```
+
+We now have a clean dataset that we can examine further.  I'm going to use postgres, but you can use Excel (which I highly recommend you get a copy of),
+sqlite, mysql, etc.
+
+I like postgres because it has the most powerful GIS extensions of any piece of software that I've used. SQL is also the greatest language for asking questions of a dataset. It was designed for this purpose and for me, it's indispensable.
+
+
 ### Intro to MapBox Studio
-Not comprehensive.  Talk about the editor.  The CartoCSS markup.
-Start by changing a few properties.
+Breifly walk through the Mapbox Studio editor.  For an in-depth getting started guide, check out [the official docs](https://www.mapbox.com/guides/getting-started-studio/).
 
 ### Incendio!
 Ask people to import [fire](https://data.oregon.gov/Natural-Resources/2005-2014-Fire-Data/9nkj-mp3y) data source that lives on MapBox.
@@ -64,7 +90,7 @@ Point out markers in the ocean and oddly even-spaced points inside Oregon as a g
 
 * Note how not all markers aren't drawn.  Enabled `marker-allow-overlap`.
 
-Talk about the disperety between Medford and Portland.  There are about 77k people in Medford vs. about 620k people in Portland.  
+Talk about the disparity between Medford and Portland.  There are about 77k people in Medford vs. about 620k people in Portland.  
 
 Q. What could that tell us about the fires?
 A. More people != more fires.  
