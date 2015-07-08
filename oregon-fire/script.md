@@ -101,7 +101,7 @@ A. ...Later
   marker-width: 3;
   marker-fill: orangered;
   marker-line-width: 0;
-  marker-allow-overlap: true;
+  marker-ignore-placement: true;
   marker-opacity: 0.2;
  }
  ```
@@ -109,6 +109,15 @@ A. ...Later
   ![](./images/step-3.png)
 
 * Style recent (>=2014) fires a different color.
+* Only show 2014.
+* Only show 2010
+
+``` sql
+-- Count the number of fires in 2014 vs 2010
+select count(*) from fires where year = 2010;
+select count(*) from fires where year = 2014;
+```
+
 
 Discuss the need for some kind of spreadsheet application or a database.  Something that helps you ask questions of the data to find out what message you're trying to convey.
 
