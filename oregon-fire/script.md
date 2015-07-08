@@ -58,11 +58,9 @@ I like postgres because it has the most powerful GIS extensions of any piece of 
 Breifly walk through the Mapbox Studio editor.  For an in-depth getting started guide, check out [the official docs](https://www.mapbox.com/guides/getting-started-studio/).
 
 ### Incendio!
-Ask people to import [fire](https://data.oregon.gov/Natural-Resources/2005-2014-Fire-Data/9nkj-mp3y) data source that lives on MapBox.
+Ask people to open the source project.  [TODO UPLOAD TO DROPBOX]
 
 ### Playing With Fire
-* Create new project using Mapbox Light
-* Add caged.aa3fadad to source
 * Create new stylesheet "fire"
 * Make the points appear as a marker
 
