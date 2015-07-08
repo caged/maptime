@@ -3319,9 +3319,107 @@
     <StyleName>bridge-line</StyleName>
     <StyleName>bridge-pattern</StyleName>  </Layer>
 
+<Style name="fires" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer width="20" file="img/maki/hospital-12.svg" fill="#3887be" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer width="16" file="img/maki/hospital-12.svg" fill="#3887be" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer width="12" file="img/maki/hospital-12.svg" fill="#3887be" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer width="8" file="img/maki/hospital-12.svg" fill="#3887be" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer width="4" file="img/maki/hospital-12.svg" fill="#3887be" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <Filter>([cause] = 'lightning')</Filter>
+    <MarkersSymbolizer file="img/maki/hospital-12.svg" fill="#3887be" width="0.1" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([cause] = 'motorist')</Filter>
+    <MarkersSymbolizer width="20" file="img/maki/car-12.svg" fill="#333333" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([cause] = 'motorist')</Filter>
+    <MarkersSymbolizer width="16" file="img/maki/car-12.svg" fill="#333333" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([cause] = 'motorist')</Filter>
+    <MarkersSymbolizer width="12" file="img/maki/car-12.svg" fill="#333333" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([cause] = 'motorist')</Filter>
+    <MarkersSymbolizer width="8" file="img/maki/car-12.svg" fill="#333333" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([cause] = 'motorist')</Filter>
+    <MarkersSymbolizer width="4" file="img/maki/car-12.svg" fill="#333333" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <Filter>([cause] = 'motorist')</Filter>
+    <MarkersSymbolizer file="img/maki/car-12.svg" fill="#333333" width="0.1" allow-overlap="true" ignore-placement="true" opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <MarkersSymbolizer width="20" allow-overlap="true" ignore-placement="true" fill="#ff4500" opacity="0.6" file="img/maki/fire-station-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <MarkersSymbolizer width="16" allow-overlap="true" ignore-placement="true" fill="#ff4500" opacity="0.6" file="img/maki/fire-station-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <MarkersSymbolizer width="12" allow-overlap="true" ignore-placement="true" fill="#ff4500" opacity="0.6" file="img/maki/fire-station-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <MarkersSymbolizer width="8" allow-overlap="true" ignore-placement="true" fill="#ff4500" opacity="0.6" file="img/maki/fire-station-12.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <MarkersSymbolizer width="4" allow-overlap="true" ignore-placement="true" fill="#ff4500" opacity="0.6" file="img/maki/fire-station-12.svg" />
+  </Rule>
+  <Rule>
+    <MarkersSymbolizer width="0.1" allow-overlap="true" ignore-placement="true" fill="#ff4500" opacity="0.6" file="img/maki/fire-station-12.svg" />
+  </Rule>
+</Style>
 <Layer name="fires"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>fires</StyleName>  </Layer>
 
 <Style name="admin" filter-mode="first">
   <Rule>
