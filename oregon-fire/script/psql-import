@@ -2,8 +2,6 @@
 
 db_name=$1
 
-echo $db_name
-
 dropdb --if-exists --interactive $db_name
 createdb $db_name
 psql -f sql/schema.sql $db_name
